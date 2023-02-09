@@ -1,6 +1,6 @@
 :root{
     --bg--black: #000000;
-    --bg--gray: #626f7c;
+    --bg--gray: #58616baa;
     --color-icon-green: #4bc800;
     --bg-footer: #222222;
     --color-red: #cb2100;
@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 
@@ -36,6 +37,15 @@ main img{
 
 /* footer elements */
 
+.footer{
+    height: 46px;
+}
+
+
+
+
+
+
 
 
 /* dimension row / element */
@@ -49,6 +59,7 @@ main img{
 
 
 
+
 /* style element text */
 .white{
     color: var(--color-white);
@@ -56,17 +67,33 @@ main img{
 .black{
     background-color: var(--bg--black);
 }
+.light-black{
+    background-color: var(--bg-footer);
+}
 .red{
     color: var(--color-red);
 }
 .gray{
     background-color: var(--bg--gray);
 }
+.border-radius{
+    border-radius: 4px;
+}
 
 
 
 
+.fa-solid{
+    font-size: 1.4em;
+}
 
+.fa-chevron-up{
+    font-size: 0.8em;
+}
+
+footer .fa-solid{
+    padding-bottom: 4px;
+}
 
 
 
@@ -83,13 +110,32 @@ main img{
 .paddin-header{
     padding: 8px;
 }
+.paddin-footer{
+    padding: 15px;
+}
 .padd-main{
-    padding: 50px 0 20px 0;
+    padding: 50px 0;
+}
+.padd-contain{
+    padding: 30px 5px;
 }
 
 .margin-text-header{
     margin-right: 5px;
 }
+
+
+.padding-text-footer{
+    padding: 0 20px;
+    
+}
+.padding-right{
+    padding-right: 4px;
+}
+
+
+
+
 
 
 
@@ -101,9 +147,9 @@ main img{
 .pos-absolute{
     position: absolute;
     bottom: 0;
-    left: 0;
-    
+    left: 5px;
 }
+
 
 
 
@@ -135,10 +181,16 @@ main img{
     justify-content: center;
     align-items: center;
 }
+.d-flex-column{
+    flex-flow: column wrap;
+}
 
 .d-flex-wrap{
     flex-flow: row wrap;
 }
+/* .d-flex-nowrap{
+    flex-flow: column nowrap;
+} */
 
 .d-flex-sp-between{
     justify-content: space-between;
