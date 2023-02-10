@@ -1,6 +1,6 @@
 :root{
     --bg--black: #000000;
-    --bg--gray: #58616baa;
+    --bg--gray: #737d88aa;
     --color-icon-green: #4bc800;
     --bg-footer: #222222;
     --color-red: #cb2100;
@@ -19,38 +19,45 @@
 
 
 
-/* header elements */
-
-
-
-
 /* main elements */
-
 main img{
-    width: 100%;
-   
+    width: 100%; 
 }
-
 
 
 
 
 /* footer elements */
-
 .footer{
-    height: 46px;
+    width: 100vw;
+    height: 3.8vw;   
+}
+.vw-cont-footer{
+    width: 10vw;
+    height: 4vw;
 }
 
 
 
 
-
-
-
-
 /* dimension row / element */
-.row-img{
+.vw-img{
     width: calc(100% / 7);
+}
+.vw-cont-header{
+    width: 6.9vw;
+    height: 1.5vw;
+}
+.vw-cont-main{
+    width: 6vw;
+    height: 1.5vw;
+}
+.vw-cont-icon{
+    width: 1.4vw;
+    height: 1.5vw;
+}
+.vw-text{
+    font-size: 0.7vw;
 }
 .container{
     width: 90%;
@@ -79,86 +86,62 @@ main img{
 .border-radius{
     border-radius: 4px;
 }
-
-
-
-
-.fa-solid{
-    font-size: 1.4em;
+.bolder{
+    font-weight: bolder;
 }
 
+
+
+
+/* icon style */
 .fa-chevron-up{
-    font-size: 0.8em;
+    font-size: 0.7vw;
 }
-
+nav .fa-solid{
+    font-size: 0.7vw;
+    margin-right: 2px;
+}
+main .fa-solid{
+    font-size: 0.7vw;
+}
 footer .fa-solid{
-    padding-bottom: 4px;
+    padding-bottom: 8px;
+    font-size: 1vw;
 }
-
-
-
-
-
+.fa-share-from-square{
+    color: var(--color-icon-green);
+}
 
 
 
 
 /* style padding / margin element */
-.padd-text-header{
-    padding: 5px;
+.padding-tot-6{
+    padding: 7px;
 }
-.paddin-header{
-    padding: 8px;
+.paddin-T-B{
+    padding: 50px 0 30px 0;
 }
-.paddin-footer{
-    padding: 15px;
+.padding-T-R-B-L{
+    padding: 7px 3px;
 }
-.padd-main{
-    padding: 50px 0;
-}
-.padd-contain{
-    padding: 30px 5px;
-}
-
-.margin-text-header{
+.margin-tot-R6{
     margin-right: 5px;
 }
-
-
-.padding-text-footer{
-    padding: 0 20px;
-    
+.margin-L-R{
+    margin-left: 4px;
+    margin-right: 4px;
 }
-.padding-right{
-    padding-right: 4px;
+.margin-L{
+    margin-left: 10px;   
 }
-
-
-
-
-
-
-
-
-/* position relative / absolute */
-.pos-relative{
-    position: relative;
+.margin-L-6{
+    margin-left: 6px;  
 }
-.pos-absolute{
-    position: absolute;
-    bottom: 0;
-    left: 5px;
+.margin-L-R-10{
+    margin-left: 10px;
+    margin-right: 10px;  
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -181,6 +164,9 @@ footer .fa-solid{
     justify-content: center;
     align-items: center;
 }
+.items-center{
+    align-items: center;
+}
 .d-flex-column{
     flex-flow: column wrap;
 }
@@ -188,13 +174,34 @@ footer .fa-solid{
 .d-flex-wrap{
     flex-flow: row wrap;
 }
-/* .d-flex-nowrap{
-    flex-flow: column nowrap;
-} */
 
 .d-flex-sp-between{
     justify-content: space-between;
 }
+
+
+
+/* hover effect */
+main .fa-solid:hover{
+    color: var(--color-red);
+    cursor: pointer;
+}
+footer .fa-solid:hover{
+    text-shadow: 3px 3px 5px  rgb(91, 91, 91);
+    opacity: 0.8;
+    cursor: pointer;
+}
+footer .fa-microphone:hover{
+    text-shadow: 3px 3px 5px  rgb(91, 91, 91);
+    color: var(--color-red);
+    cursor: pointer;
+}
+.contain-hover:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
 
 
 
