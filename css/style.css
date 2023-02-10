@@ -227,6 +227,12 @@ footer .fa-microphone:hover{
     opacity: 0.8;
     cursor: pointer;
 }
+.card-hover:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    border: 0.8px solid rgb(189, 189, 189);
+    border-radius: 10px;
+}
 
 
 
